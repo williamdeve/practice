@@ -1,0 +1,11 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/spring-samples/!svn/ver/256/mvc-basic/trunk/src/test/resources
+END
+log4j.xml
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/spring-samples/!svn/ver/256/mvc-basic/trunk/src/test/resources/log4j.xml
+END

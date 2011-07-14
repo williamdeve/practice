@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/spring-samples/!svn/ver/252/mvc-basic/trunk/src/main/java/org/springframework/samples/mvc/basic/account
+END
+AccountController.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/spring-samples/!svn/ver/252/mvc-basic/trunk/src/main/java/org/springframework/samples/mvc/basic/account/AccountController.java
+END
+ResourceNotFoundException.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/spring-samples/!svn/ver/250/mvc-basic/trunk/src/main/java/org/springframework/samples/mvc/basic/account/ResourceNotFoundException.java
+END
+Account.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/spring-samples/!svn/ver/237/mvc-basic/trunk/src/main/java/org/springframework/samples/mvc/basic/account/Account.java
+END
