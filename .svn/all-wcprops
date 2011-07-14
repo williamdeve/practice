@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/spring-samples/!svn/ver/603/mvc-basic/trunk
+END
+.classpath
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/spring-samples/!svn/ver/231/mvc-basic/trunk/.classpath
+END
+.project
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/spring-samples/!svn/ver/225/mvc-basic/trunk/.project
+END
+.springBeans
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/spring-samples/!svn/ver/599/mvc-basic/trunk/.springBeans
+END
+pom.xml
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/spring-samples/!svn/ver/599/mvc-basic/trunk/pom.xml
+END

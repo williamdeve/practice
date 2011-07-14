@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/spring-samples/!svn/ver/602/mvc-basic/trunk/src/main/webapp/WEB-INF/views/account
+END
+createForm.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/spring-samples/!svn/ver/602/mvc-basic/trunk/src/main/webapp/WEB-INF/views/account/createForm.jsp
+END
+view.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/spring-samples/!svn/ver/602/mvc-basic/trunk/src/main/webapp/WEB-INF/views/account/view.jsp
+END
