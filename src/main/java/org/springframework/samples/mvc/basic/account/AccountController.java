@@ -7,7 +7,7 @@ import java.util.concurrent.ConcurrentHashMap;
 
 import javax.validation.Valid;
 
-import net.spy.memcached.MemcachedClient;
+//import net.spy.memcached.MemcachedClient;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -24,19 +24,19 @@ public class AccountController {
 	
 	@RequestMapping(method=RequestMethod.GET)
 	public String getCreateForm(Model model) {
-		MemcachedClient client = null;
-		try {
-			client = new MemcachedClient(new InetSocketAddress("10.201.10.122",11211));
-			System.out.println(client.get("2"));
-			
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+//		MemcachedClient client = null;
+//		try {
+//			client = new MemcachedClient(new InetSocketAddress("10.201.10.122",11211));
+//			System.out.println(client.get("2"));
+//			
+//		} catch (IOException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
 		Account a = new Account();
-		a.setName(client.get("4").toString());
+		//a.setName(client.get("4").toString());
 		model.addAttribute(a);
-		client.shutdown();
+		//client.shutdown();
 		
 		
 		return "account/createForm";
@@ -49,15 +49,15 @@ public class AccountController {
 		}
 		String a = account.assignId().toString();
 		this.accounts.put(account.assignId(), account);
-		try {
-			
-			MemcachedClient client = new MemcachedClient(new InetSocketAddress("10.201.10.122",11211));
-			client.add(a, 0, "11000");
-			client.shutdown();
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+//		try {
+//			
+//			MemcachedClient client = new MemcachedClient(new InetSocketAddress("10.201.10.122",11211));
+//			client.add(a, 0, "11000");
+//			client.shutdown();
+//		} catch (IOException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
 		
 		
 		return "redirect:/account/" + account.getId();
@@ -67,22 +67,22 @@ public class AccountController {
 	public String getView(@PathVariable Long id, Model model) {
 		//Account account = this.accounts.get(id);
 		Account account = new Account();
-		MemcachedClient client = null;
-try {
-			
-			client = new MemcachedClient(new InetSocketAddress("10.201.10.122",11211));
-			
-			System.out.print(client.get(String.valueOf(id)));
+//		MemcachedClient client = null;
+//try {
+//			
+//			client = new MemcachedClient(new InetSocketAddress("10.201.10.122",11211));
+//			
+//			System.out.print(client.get(String.valueOf(id)));
 			//account.setName(client.get(String.valueOf(id)).toString());
-			account.setName(client.get("4").toString());
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+//			account.setName(client.get("4").toString());
+//		} catch (IOException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
 		if (account == null) {
 			throw new ResourceNotFoundException(id);
 		}
-		client.shutdown();
+		//client.shutdown();
 		model.addAttribute(account);
 		return "account/view";
 	}
