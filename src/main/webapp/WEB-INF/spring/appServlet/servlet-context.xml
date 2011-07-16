@@ -43,4 +43,5 @@
 		<property name="maxUploadSize" value="100000" />
 	</bean>
 	<bean id="test" class="org.springframework.samples.mvc.basic.account.TestImpl"></bean>
+
 </beans>

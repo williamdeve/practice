@@ -11,6 +11,7 @@ import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -67,6 +68,7 @@ public class AccountController {
 //			// TODO Auto-generated catch block
 //			e.printStackTrace();
 //		}
+	
 		
 		
 		return "redirect:/account/" + account.getId();
@@ -92,6 +94,7 @@ public class AccountController {
 			throw new ResourceNotFoundException(id);
 		}
 		//client.shutdown();
+
 		model.addAttribute(account);
 		return "account/view";
 	}
