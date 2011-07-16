@@ -9,6 +9,8 @@ import javax.validation.Valid;
 
 //import net.spy.memcached.MemcachedClient;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -19,6 +21,14 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @Controller
 @RequestMapping(value="/account")
 public class AccountController {
+	private TestInterface test;
+	public TestInterface getTest() {
+		return test;
+	}
+	@Autowired
+	public void setTest(@Qualifier("test")TestInterface test) {
+		this.test = test;
+	}
 
 	private Map<Long, Account> accounts = new ConcurrentHashMap<Long, Account>();
 	
@@ -37,8 +47,7 @@ public class AccountController {
 		//a.setName(client.get("4").toString());
 		model.addAttribute(a);
 		//client.shutdown();
-		
-		
+		System.out.println(test.init());
 		return "account/createForm";
 	}
 	

@@ -12,7 +12,7 @@
 
 	<!-- Configures the @Controller programming model -->
 	<mvc:annotation-driven />
-
+	 <context:annotation-config/> 
 	<!-- Forwards requests to the "/" resource to the "welcome" view -->
 	<mvc:view-controller path="/" view-name="welcome"/>
 
@@ -42,4 +42,5 @@
 	<bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver" >
 		<property name="maxUploadSize" value="100000" />
 	</bean>
+	<bean id="test" class="org.springframework.samples.mvc.basic.account.TestImpl"></bean>
 </beans>
